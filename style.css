@@ -1,0 +1,15 @@
+.ulList {
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+  align-items: center;
+}
+
+.ulList li {
+  list-style: none;
+}
+
+.ulList li a {
+  text-decoration: none;
+  color: black;
+}
