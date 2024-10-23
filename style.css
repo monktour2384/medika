@@ -13,3 +13,37 @@
   text-decoration: none;
   color: black;
 }
+
+.nextArrow {
+  margin-left: 20px;
+}
+
+.prevArrow {
+  margin-right: 50px;
+}
+
+.dotsClass {
+  background-color: red;
+}
+
+.slick-dots {
+  position: absolute;
+  top: 90%;
+}
+
+.section .column {
+  margin-top: 50px;
+}
+
+.section .column-2 {
+  margin-top: 50px;
+}
+
+.fa-check {
+  border: 1px solid blue;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+.slick-dots li.slick-active button:before {
+  font-size: 30px;
+}

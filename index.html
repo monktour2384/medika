@@ -12,6 +12,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
@@ -56,12 +57,12 @@
   <body>
     <header class="row">
       <div class="col-12 text-bg-success header d-flex align-items-center">
-        <div class="col-6 md-col-12 section-1 d-flex align-items-center gap-5">
-          <p>123 Street, New York, Usa</p>
-          <p>Mon-Fri: 09:00 AM - 09:00 PM</p>
+        <div class="col-md-6 md-col-12 section-1 d-flex align-items-center gap-5 px-2">
+          <p class="mb-1 mt-2">123 Street, New York, Usa</p>
+          <p class="mb-1 mt-2">Mon-Fri: 09:00 AM - 09:00 PM</p>
         </div>
         <div
-          class="col-6 section-2 d-flex align-items-center justify-content-end gap-5"
+          class="col-md-6 section-2 d-flex align-items-center justify-content-end gap-5"
         >
           <span>+0123456789</span>
           <i class="fa-brands fa-facebook"></i>
@@ -73,53 +74,51 @@
     </header>
     <nav>
       <div class="row d-flex align-items-center">
-        <div class="col-6">
-          <p class="display-1">KLINIK</p>
-        </div>
-        <div class="col-6">
-          <ul class="ulList">
-            <li>
-              <a href="#">HOME</a>
-            </li>
-            <li>
-              <a href="#">ABOUT</a>
-            </li>
-            <li>
-              <a href="#">SERVICE</a>
-            </li>
-            <div class="dropdown">
-              <a
-                class="btn btn-secondary dropdown-toggle"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                PAGES
-              </a>
-
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </li>
-              </ul>
-            </div>
-
-            <li>
-              <a href="#">CONTACT</a>
-            </li>
-            <li class="btn btn-primary btn-lg">
-              <a href="#">Appointment</a>
-            </li>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <div class="col-md-6"><a class="navbar-brand" href="#">KLINIK</a></div>
+    <div >
+    
+ 
+    <button class="navbar-toggler float-end mx-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 text-end mb-lg-0 float-start ">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Services</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            page
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
           </ul>
-        </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+        </li>
+      </ul>
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+    </div>
+  </div>
+</nav>
       </div>
     </nav>
     <main>
       <div class="row">
-        <div class="col-6 bg-primary d-flex flex-column justify-content-center">
+        <div class="col-md-6 bg-primary d-flex flex-column justify-content-center">
           <p class="display-2">Good Health Is The Root Of All Happiness</p>
           <div class="row">
             <div class="col-4"><p>Expert Doctors</p></div>
@@ -127,24 +126,54 @@
             <div class="col-4"><p>Total Patients</p></div>
           </div>
         </div>
-        <div class="col-6 position-relative">
+        <div class="col-md-6 position-relative ">
           <p
             class="position-absolute display-2 top-50 start-50 translate-middle"
           >
             Cardiology
           </p>
           <div class="wrapper">
-            <div class="imgs d-flex">
-              <img class="w-100" src="horse.png.jpg" alt="" />
-              <img src="img1.png" class="w-100" alt="" />
+            <div class="imgs position-relative">
+              <img class="w-100" src="2.png" alt="" />
+              <img src="img1.png " class="w-100" alt="" />
               <img src="img2.png" class="w-100" alt="" />
               <img src="img3.png" class="w-100" alt="" />
               <img src="img4.png" class="w-100" alt="" />
             </div>
-          </div>
+            <div class="prevArrow position-absolute top-50 ">
+              <button class="btn btn-light">Prev</button>
+            </div>
+            <div class="nextArrow position-absolute top-50 end-0">
+              <button class="btn btn-light">Next</button>
+            </div>
+           
         </div>
       </div>
     </main>
+
+    <section class="section d-md-flex container md-w-50 gap-5">
+      <div class="col-md-6  column">
+        <div class="section-imgs">
+          <img src="img3.png "  class="img1 img-thumbnail ">
+          <img src="img1.png"  class="img2 img-thumbnail w-50">
+        </div>
+      </div>
+      <div class="col-md-6 column-2">
+        <button class="btn btn-success">About Us</button>
+        <p CLASS="display-5">
+          WHY YOU SHOULD NOT TRUST US? GET KNOW ABOUT US!
+        </p>
+        <p>
+          Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet
+
+Stet no et lorem dolor et diam, amet duo ut dolore vero eos. No stet est diam rebum amet diam ipsum. Clita clita labore, dolor duo nonumy clita sit at, sed sit sanctus dolor eos.
+        </p>
+        <p><span><i class="fa-solid fa-check"></i></span>Quality health care</p>
+        <p><span><i class="fa-solid fa-check"></i></span>Only Qualified Doctors</p>
+        <p><span><i class="fa-solid fa-check"></i></span>Medical Research Professionals</p>
+      </div>
+    </section>
     <script src="script.js"></script>
+
   </body>
 </html>
